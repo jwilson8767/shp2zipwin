@@ -7,7 +7,7 @@ This utility adds a context menu item for '.shp' files in Windows Explorer that 
 ## Installation
 First, make sure you have installed [7-zip](https://www.7-zip.org/).
 
-Then [download the release]() and run `install.bat` by double clicking it. A reboot may be necessary for the option to become available when you right-click '.shp' files.
+Then [download the release](https://github.com/jwilson8767/shp2zipwin/releases/download/1.0/shp2zipwin_1_0.zip) and run `install.bat` by double clicking it. A reboot may be necessary for the option to become available when you right-click '.shp' files.
 
 
 ## Removal
