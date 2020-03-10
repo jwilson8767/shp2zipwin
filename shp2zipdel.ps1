@@ -17,7 +17,7 @@ if ([System.IO.Path]::GetExtension($args[0]) -ne '.shp')
     throw "The file specified is not a shapefile!"
 }
 
-$extensions = [System.Collections.ArrayList]@(".shp",".shx", ".dbf", ".sbn",".qpj", ".sbx", ".fbn", ".fbx", ".ain", ".aih", ".atx", ".ixs", ".mxs", ".prj", ".xml", ".cpg", ".shp.xml",'.aux.xml')
+$extensions = [System.Collections.ArrayList]@(".shp",".shx", ".dbf", ".sbn",".qpj", ".sbx", ".fbn", ".fbx", ".ain", ".aih", ".atx", ".ixs", ".mxs", ".prj", ".xml", ".cpg", ".shp.xml")
 
 $input_file_basename = [System.IO.Path]::GetFileNameWithoutExtension($args[0])
 
@@ -33,7 +33,7 @@ foreach ($ext in $extensions)
 
 $outfile = $input_file_basename + '.shp.zip'
 
-$params = [System.Collections.ArrayList]@('u','-tzip', '-mx=9',$outfile)
+$params = [System.Collections.ArrayList]@('a','-tzip', '-mx=9','-sdel',$outfile)
 $params.AddRange($input_files)
 #echo $7zip_exe
 #echo ($params)

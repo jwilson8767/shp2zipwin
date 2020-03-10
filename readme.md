@@ -18,3 +18,11 @@ This software is MIT licensed.
 
 ## Attribution
 Thanks to ORelio's FileActionsManager and 7-Zip for making this project possible!
+
+
+## Changelog
+
+##### 1.1
+Minor fixes to install / uninstall and set powershell execution policy bypass. `install.bat` now installs both shp2zip and shp2zipdel.
+##### 1.0
+Initial release
